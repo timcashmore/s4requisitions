@@ -1,70 +1,18 @@
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
     <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
         <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Communication.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
     </edmx:Reference>
     <edmx:Reference Uri="/sap/opu/odata/sap/API_PURCHASEREQ_PROCESS_SRV/$metadata">
         <edmx:Include Namespace="API_PURCHASEREQ_PROCESS_SRV"/>
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
-            <Annotations Target="API_PURCHASEREQ_PROCESS_SRV.A_PurchaseRequisitionItemType">
-                <Annotation Term="UI.LineItem">
-                    <Collection>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="PurchaseRequisition"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Material"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="CreatedByUser"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="CreationDate"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="PurchaseRequisitionPrice"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="PurchaseRequisitionItemText"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="RequestedQuantity"/>
-                        </Record>
-                    </Collection>
-                </Annotation>
-                <Annotation Term="UI.SelectionFields">
-                    <Collection>
-                        <PropertyPath>CreationDate</PropertyPath>
-                        <PropertyPath>CreatedByUser</PropertyPath>
-                        <PropertyPath>Material</PropertyPath>
-                    </Collection>
-                </Annotation>
-                <Annotation Term="UI.FieldGroup" Qualifier="Details">
-                    <Record Type="UI.FieldGroupType">
-                        <PropertyValue Property="Data">
-                            <Collection>
-                                <Record Type="UI.DataField">
-                                    <PropertyValue Property="Value" Path="CreatedByUser"/>
-                                </Record>
-                            </Collection>
-                        </PropertyValue>
-                        <PropertyValue Property="Label" String="Details"/>
-                    </Record>
-                </Annotation>
-            </Annotations>
-            <Annotations Target="API_PURCHASEREQ_PROCESS_SRV.A_PurchaseReqnItemTextType">
-                <Annotation Term="UI.LineItem">
-                    <Collection>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="PurchaseRequisition"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Language"/>
-                        </Record>
-                    </Collection>
-                </Annotation>
-            </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
