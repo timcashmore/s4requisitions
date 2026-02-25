@@ -1,0 +1,32 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Feb 25 2026 09:26:25 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "OData URL",
+    "metadataFilename": "",
+    "serviceUrl": "https://my300232-api.s4hana.ondemand.com/sap/opu/odata/sap/API_PURCHASEREQ_PROCESS_SRV/",
+    "appName": "s4requisitions",
+    "appTitle": "Requisition List",
+    "appDescription": "S4Requisitions",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.142.6",
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.20.3",
+    "template": "Worklist Page V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "A_PurchaseRequisitionItem"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "None"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
